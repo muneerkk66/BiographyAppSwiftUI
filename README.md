@@ -41,7 +41,7 @@ Dependency Inversion Principle
      
 
 ## How To Install
-1. Clone the repository using git clone command : git clone https://github.com/muneerkk66/SkyVPN.git (you can also use ssh/github CLI ).
+1. Clone the repository using git clone command : git clone https://github.com/muneerkk66/BiographyAppSwiftUI.git (you can also use ssh/github CLI ).
 2. Go to project directory
 3. Open project Workspace then run the code.
 
