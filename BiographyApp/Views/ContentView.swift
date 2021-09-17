@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    init() {
+            UITextView.appearance().backgroundColor = .clear
+        }
     @ObservedObject var bioGraphyVM = BioGraphyVM()
     @State private var inputText = ""
     @State private var wordCount: Int = 0
@@ -20,6 +23,7 @@ struct ContentView: View {
         ZStack(alignment: .topTrailing) {
            
             TextEditor(text: $inputText)
+                .background(Color.lightGrayColor)
                 .font(.body)
                 .padding()
                 .padding(.top, 20)
@@ -27,11 +31,14 @@ struct ContentView: View {
                    
                     self.wordCount = bioGraphyVM.calculateWordsCount(inputText)
                 }
+            
             Text("\(wordCount) \(AppConstants.words)")
                 .font(.headline)
                 .foregroundColor(.secondary)
                 .padding(.trailing)
         }
+        
+        //MARK:- Auto fill Random Word suggestion
         Section {
             if !inputText.isEmpty {
                 List {

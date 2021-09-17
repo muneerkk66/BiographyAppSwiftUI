@@ -15,6 +15,7 @@
 		E8537E8426F5329E00857EFF /* BiographyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E8326F5329E00857EFF /* BiographyAppUITests.swift */; };
 		E8537E9226F532D000857EFF /* BioGraphyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E9126F532D000857EFF /* BioGraphyVM.swift */; };
 		E8537E9426F5331C00857EFF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E9326F5331C00857EFF /* AppConstants.swift */; };
+		E8537E9926F53AB700857EFF /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E9826F53AB700857EFF /* AppExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E8537E8526F5329E00857EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8537E9126F532D000857EFF /* BioGraphyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioGraphyVM.swift; sourceTree = "<group>"; };
 		E8537E9326F5331C00857EFF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		E8537E9826F53AB700857EFF /* AppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,12 @@
 		E8537E6526F5329C00857EFF /* BiographyApp */ = {
 			isa = PBXGroup;
 			children = (
+				E8537E9726F53A9F00857EFF /* Utils */,
 				E8537E9626F535D900857EFF /* ViewModel */,
 				E8537E9526F535CF00857EFF /* Views */,
 				E8537E6A26F5329E00857EFF /* Assets.xcassets */,
 				E8537E6F26F5329E00857EFF /* Info.plist */,
 				E8537E6C26F5329E00857EFF /* Preview Content */,
-				E8537E9326F5331C00857EFF /* AppConstants.swift */,
 			);
 			path = BiographyApp;
 			sourceTree = "<group>";
@@ -150,6 +152,15 @@
 				E8537E9126F532D000857EFF /* BioGraphyVM.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E8537E9726F53A9F00857EFF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8537E9826F53AB700857EFF /* AppExtensions.swift */,
+				E8537E9326F5331C00857EFF /* AppConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8537E9926F53AB700857EFF /* AppExtensions.swift in Sources */,
 				E8537E6926F5329C00857EFF /* ContentView.swift in Sources */,
 				E8537E9226F532D000857EFF /* BioGraphyVM.swift in Sources */,
 				E8537E6726F5329C00857EFF /* BiographyAppApp.swift in Sources */,
