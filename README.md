@@ -1,5 +1,3 @@
-# BiographyAppSwiftUI
-
 #  BiographyAppSwiftUI - A BioGraphy App using SwiftUI
 
 ## Features
