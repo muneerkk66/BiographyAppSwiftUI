@@ -13,6 +13,8 @@
 		E8537E6E26F5329E00857EFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8537E6D26F5329E00857EFF /* Preview Assets.xcassets */; };
 		E8537E7926F5329E00857EFF /* BiographyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E7826F5329E00857EFF /* BiographyAppTests.swift */; };
 		E8537E8426F5329E00857EFF /* BiographyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E8326F5329E00857EFF /* BiographyAppUITests.swift */; };
+		E8537E9226F532D000857EFF /* BioGraphyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E9126F532D000857EFF /* BioGraphyVM.swift */; };
+		E8537E9426F5331C00857EFF /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8537E9326F5331C00857EFF /* AppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		E8537E7F26F5329E00857EFF /* BiographyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiographyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8537E8326F5329E00857EFF /* BiographyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiographyAppUITests.swift; sourceTree = "<group>"; };
 		E8537E8526F5329E00857EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8537E9126F532D000857EFF /* BioGraphyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioGraphyVM.swift; sourceTree = "<group>"; };
+		E8537E9326F5331C00857EFF /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,12 @@
 		E8537E6526F5329C00857EFF /* BiographyApp */ = {
 			isa = PBXGroup;
 			children = (
-				E8537E6626F5329C00857EFF /* BiographyAppApp.swift */,
-				E8537E6826F5329C00857EFF /* ContentView.swift */,
+				E8537E9626F535D900857EFF /* ViewModel */,
+				E8537E9526F535CF00857EFF /* Views */,
 				E8537E6A26F5329E00857EFF /* Assets.xcassets */,
 				E8537E6F26F5329E00857EFF /* Info.plist */,
 				E8537E6C26F5329E00857EFF /* Preview Content */,
+				E8537E9326F5331C00857EFF /* AppConstants.swift */,
 			);
 			path = BiographyApp;
 			sourceTree = "<group>";
@@ -128,6 +133,23 @@
 				E8537E8526F5329E00857EFF /* Info.plist */,
 			);
 			path = BiographyAppUITests;
+			sourceTree = "<group>";
+		};
+		E8537E9526F535CF00857EFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8537E6626F5329C00857EFF /* BiographyAppApp.swift */,
+				E8537E6826F5329C00857EFF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8537E9626F535D900857EFF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E8537E9126F532D000857EFF /* BioGraphyVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8537E6926F5329C00857EFF /* ContentView.swift in Sources */,
+				E8537E9226F532D000857EFF /* BioGraphyVM.swift in Sources */,
 				E8537E6726F5329C00857EFF /* BiographyAppApp.swift in Sources */,
+				E8537E9426F5331C00857EFF /* AppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
